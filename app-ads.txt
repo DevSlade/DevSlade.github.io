@@ -1,0 +1,5 @@
+# app-ads.txt for Capybara Cartel (Holler Pop)
+# Fill in once the AdMob account exists: AdMob -> Apps -> View all apps -> app-ads.txt shows your exact line.
+# It looks like the line below, with your own publisher ID (pub-XXXXXXXXXXXXXXXX).
+# Remove the leading "# " from that line when it's real.
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
