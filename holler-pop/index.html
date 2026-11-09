@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holler Pop · Match-3 puzzle game for Android · Capybara Cartel</title>
+<meta name="description" content="Match flavored whiskey bottles, roll barrels and help Ol' Pete fix up the holler. 100 levels across ten chapters. Coming soon to Google Play.">
+<meta name="theme-color" content="#3f8fcb">
+<link rel="canonical" href="https://capybaracartel.com/holler-pop/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Capybara Cartel">
+<meta property="og:title" content="Holler Pop">
+<meta property="og:description" content="Match whiskey bottles, roll barrels and help Ol' Pete fix up the holler. Coming soon to Google Play.">
+<meta property="og:url" content="https://capybaracartel.com/holler-pop/">
+<meta property="og:image" content="https://capybaracartel.com/assets/img/holler-pop/og-holler-pop.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/holler-pop/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/holler-pop/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/holler-pop/icon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Rye&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/lilita-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/fredoka-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/holler-pop.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/assets/js/site.js" defer></script>
+</head>
+<body class="hp">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header grain">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Capybara Cartel home">
+      <img src="/assets/img/mark-cream-112.png" width="100" height="112" alt="">
+      <span>Capybara Cartel</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/holler-pop/" aria-current="page">Holler Pop</a>
+      <a href="/about/">About</a>
+      <a href="/support/">Support</a>
+      <a class="nav-cta" href="mailto:support@capybaracartel.com">Email us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hp-hero" aria-labelledby="hp-h1">
+    <div class="sunglow" aria-hidden="true"></div>
+    <div class="cloud c1" aria-hidden="true"></div>
+    <div class="cloud c2" aria-hidden="true"></div>
+    <div class="cloud c3" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hp-h1" class="sr-only">Holler Pop</h1>
+        <img class="hero-logo-hp" src="/assets/img/holler-pop/logo.webp" width="889" height="635" alt="Holler Pop!">
+        <p class="tag">Match whiskey bottles, roll barrels and help Ol' Pete fix up the holler.</p>
+        <div class="hero-cta">
+          <span class="soon" role="note">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="2" width="16" height="28" rx="4" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="16" cy="25" r="1.6" fill="#fff"/><path d="M13 12.5v6l5.2-3z" fill="#ffcf3f"/></svg>
+            <span>Coming soon to<b>Google Play</b></span>
+          </span>
+          <a class="gbtn" href="mailto:support@capybaracartel.com?subject=Tell%20me%20when%20Holler%20Pop%20is%20out&amp;body=Howdy!%20Send%20me%20a%20note%20when%20Holler%20Pop%20is%20on%20Google%20Play.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>
+            Tell me when it's out
+          </a>
+        </div>
+        <ul class="chips" aria-label="At a glance">
+          <li>100 levels</li>
+          <li>10 chapters</li>
+          <li>Free on Android</li>
+          <li>Plays offline</li>
+        </ul>
+      </div>
+      <div class="stage" data-parallax aria-hidden="true">
+        <div class="phone" style="rotate:4deg"><img src="/assets/img/holler-pop/shots/board-100.jpg" width="720" height="1280" alt=""></div>
+        <div class="float f1" data-depth="1.2"><img src="/assets/img/holler-pop/flavors/cinnamon.webp" width="200" height="200" alt=""></div>
+        <div class="float f2" data-depth="0.8"><img src="/assets/img/holler-pop/flavors/shine.webp" width="200" height="200" alt=""></div>
+        <div class="float f3" data-depth="1.6"><img src="/assets/img/holler-pop/special/golden-barrel.webp" width="200" height="200" alt=""></div>
+        <div class="float f4" data-depth="1.3"><img src="/assets/img/holler-pop/flavors/peach.webp" width="200" height="200" alt=""></div>
+        <div class="float f5" data-depth="0.9"><img src="/assets/img/holler-pop/flavors/apple.webp" width="200" height="200" alt=""></div>
+        <div class="float f6" data-depth="0.6"><img src="/assets/img/holler-pop/flavors/blackberry.webp" width="200" height="200" alt=""></div>
+      </div>
+    </div>
+    <div class="flies" aria-hidden="true">
+      <span style="left:8%;top:40%"></span><span style="left:18%;top:70%;animation-delay:-2s"></span>
+      <span style="left:31%;top:52%;animation-delay:-4s"></span><span style="left:46%;top:78%;animation-delay:-1s"></span>
+      <span style="left:58%;top:44%;animation-delay:-3s"></span><span style="left:69%;top:66%;animation-delay:-5s"></span>
+      <span style="left:81%;top:36%;animation-delay:-2.5s"></span><span style="left:92%;top:72%;animation-delay:-0.5s"></span>
+    </div>
+    <div class="hills" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice">
+        <path fill="#efb29b" d="M0,140 C120,100 210,60 320,88 C420,114 480,52 590,40 C700,28 760,104 870,110 C980,116 1050,62 1160,70 C1270,78 1360,120 1440,112 L1440,320 L0,320Z"/>
+        <path fill="#c99aa6" d="M0,190 C100,168 190,138 300,152 C410,166 480,122 590,118 C700,114 770,176 890,172 C1010,168 1080,126 1190,130 C1300,134 1380,166 1440,162 L1440,320 L0,320Z"/>
+        <path fill="#93a3a2" d="M0,232 C120,212 220,196 340,206 C460,216 540,184 660,188 C780,192 850,232 970,228 C1090,224 1160,190 1270,196 C1360,201 1410,222 1440,220 L1440,320 L0,320Z"/>
+        <path fill="#b8d862" d="M0,268 C150,240 280,258 410,242 C540,226 640,262 770,256 C900,250 1000,226 1130,236 C1260,246 1350,268 1440,258 L1440,320 L0,320Z"/>
+        <path fill="#fbf0d6" d="M0,300 C170,286 320,306 490,294 C660,282 800,306 970,302 C1140,298 1300,286 1440,296 L1440,320 L0,320Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- How it plays -->
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="center">
+        <span class="hp-kicker">How it plays</span>
+        <h2 id="how-title" class="hp-title on-paper">Match, roll and blast</h2>
+        <p class="hp-lede">Swap two bottles to line up three of a flavor and they pop. Make bigger shapes and things get loud.</p>
+      </div>
+      <div class="card-grid">
+        <article class="gcard reveal">
+          <img src="/assets/img/holler-pop/special/line.webp" width="200" height="200" alt="A striped cinnamon whiskey bottle">
+          <span class="tagline">Line up 4</span>
+          <h3>Line clear</h3>
+          <p>Four in a row clears the whole row. Four up and down takes the column.</p>
+        </article>
+        <article class="gcard reveal">
+          <img src="/assets/img/holler-pop/special/still-blast.webp" width="200" height="200" alt="A blue raspberry bottle in a gold Still Blast ring">
+          <span class="tagline">L or T shape</span>
+          <h3>Still Blast</h3>
+          <p>Match in an L or a T and the still blows, taking out everything around it.</p>
+        </article>
+        <article class="gcard reveal">
+          <img src="/assets/img/holler-pop/special/golden-barrel.webp" width="200" height="200" alt="The Golden Barrel">
+          <span class="tagline">Line up 5</span>
+          <h3>Golden Barrel</h3>
+          <p>Swap it with any bottle and every bottle of that flavor leaves the board.</p>
+        </article>
+        <article class="gcard reveal">
+          <img src="/assets/img/holler-pop/special/double-shot.webp" width="200" height="200" alt="A watermelon bottle with a 2X badge">
+          <span class="tagline">Lucky drop</span>
+          <h3>Double Shot</h3>
+          <p>Pop the bottle wearing the 2X badge for 20 seconds of double points.</p>
+        </article>
+        <article class="gcard reveal">
+          <img src="/assets/img/holler-pop/special/lucky-coin.webp" width="200" height="200" alt="An apple bottle with a four-leaf clover coin">
+          <span class="tagline">Lucky drop</span>
+          <h3>Lucky Coin</h3>
+          <p>Pop it for a handful of coins. Every so often it hits the jackpot.</p>
+        </article>
+      </div>
+      <div class="hoedown reveal">
+        <div class="big" aria-hidden="true">HOEDOWN!</div>
+        <p>Win with 5 or more moves to spare and the whole holler kicks off a Hoedown. Then it's your call: keep playing for bonus points, or finish the level and cash in what's left.</p>
+        <div class="choice" aria-hidden="true"><span class="k">Keep playing</span><span class="f">Finish level</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flavors -->
+  <section class="shelf-sec" id="flavors" aria-labelledby="flavors-title">
+    <div class="wrap center">
+      <span class="hp-kicker">On the shelf</span>
+      <h2 id="flavors-title" class="hp-title">Eleven flavors</h2>
+      <p class="hp-lede">Start with cinnamon, peach, honey, apple and jars of shine. The rest turn up as the chapters roll on. Every bottle is made up. No real brand is on any of them.</p>
+      <div class="shelves">
+        <ul class="shelf">
+          <li><img src="/assets/img/holler-pop/flavors/cinnamon.webp" width="200" height="200" alt="" loading="lazy"><span>Cinnamon</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/peach.webp" width="200" height="200" alt="" loading="lazy"><span>Peach</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/honey.webp" width="200" height="200" alt="" loading="lazy"><span>Honey</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/apple.webp" width="200" height="200" alt="" loading="lazy"><span>Apple</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/shine.webp" width="200" height="200" alt="" loading="lazy"><span>Jar of shine</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/blackberry.webp" width="200" height="200" alt="" loading="lazy"><span>Blackberry</span></li>
+        </ul>
+        <ul class="shelf">
+          <li><img src="/assets/img/holler-pop/flavors/watermelon.webp" width="200" height="200" alt="" loading="lazy"><span>Watermelon</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/lemonade.webp" width="200" height="200" alt="" loading="lazy"><span>Strawberry lemonade</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/blue-raspberry.webp" width="200" height="200" alt="" loading="lazy"><span>Blue raspberry</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/winter-mint.webp" width="200" height="200" alt="" loading="lazy"><span>Winter mint</span></li>
+          <li><img src="/assets/img/holler-pop/flavors/pumpkin.webp" width="200" height="200" alt="" loading="lazy"><span>Pumpkin</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pete -->
+  <section class="pete-sec" id="pete" aria-labelledby="pete-title">
+    <div class="wrap pete-grid">
+      <div class="pete-art reveal"><img src="/assets/img/holler-pop/pete-wave.webp" width="573" height="635" alt="Ol' Pete, a white-bearded old-timer in a red flannel shirt and a brown hat, waving" loading="lazy"></div>
+      <div class="reveal">
+        <span class="hp-kicker">Your host</span>
+        <h2 id="pete-title" class="hp-title">Meet Ol' Pete</h2>
+        <p class="bubble">Well howdy! Name's Pete. This holler used to make the finest mash in Copperhead County.</p>
+        <p class="hp-lede">Pete's got a still to fix, crates in the road and mud on every porch, and he can't do it alone. He'll show you the ropes on the first few levels, then cheer you on all the way up the mountain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapters -->
+  <section class="trail-sec" id="chapters" aria-labelledby="chapters-title">
+    <div class="wrap trail-grid">
+      <div class="reveal">
+        <span class="hp-kicker">The road up</span>
+        <h2 id="chapters-title" class="hp-title on-paper">100 levels, ten chapters</h2>
+        <p class="hp-lede">One county road, from the bottom of the holler to the top of the mountain. Each chapter is ten levels, and every level was play-tested and gets a little tougher than the last. Earn up to three stars on each one, then come back to beat your best score.</p>
+        <div class="trail-phone" aria-hidden="true">
+          <div class="phone"><img src="/assets/img/holler-pop/shots/map.jpg" width="720" height="1280" alt="" loading="lazy"></div>
+          <img class="landmark lm1" src="/assets/img/holler-pop/map/cabin.webp" alt="" loading="lazy">
+          <img class="landmark lm2" src="/assets/img/holler-pop/map/stillhouse.webp" alt="" loading="lazy">
+        </div>
+      </div>
+      <ol class="trail reveal" aria-label="The ten chapters">
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Copperhead Hollow</b><small>Levels 1–10</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Sawmill Road</b><small>Levels 11–20</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Copper Creek</b><small>Levels 21–30</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Bellhaven Fair</b><small>Levels 31–40</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Laurel Ridge</b><small>Levels 41–50</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Cold Spring Mill</b><small>Levels 51–60</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Rickhouse Row</b><small>Levels 61–70</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Blackwater Bend</b><small>Levels 71–80</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>Signal Knob</b><small>Levels 81–90</small></span></li>
+        <li><span class="node" aria-hidden="true"></span><span class="sign"><b>High Lonesome</b><small>Levels 91–100</small></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Blockers -->
+  <section id="trouble" aria-labelledby="trouble-title">
+    <div class="wrap">
+      <div class="center">
+        <span class="hp-kicker">Trouble in the holler</span>
+        <h2 id="trouble-title" class="hp-title on-paper">Clear the mess</h2>
+        <p class="hp-lede">The holler's in a state. Each chapter brings new trouble to clear on the way to your goals.</p>
+      </div>
+      <ul class="tiles">
+        <li class="tile reveal"><img src="/assets/img/holler-pop/blockers/cobweb.webp" width="180" height="180" alt="" loading="lazy"><h3>Cobwebs</h3><p>Pop the bottle under a web to sweep it away.</p></li>
+        <li class="tile reveal"><img src="/assets/img/holler-pop/blockers/crate.webp" width="180" height="180" alt="" loading="lazy"><h3>Crates</h3><p>Matches next to a crate knock it apart. Some take two or three hits.</p></li>
+        <li class="tile reveal"><img src="/assets/img/holler-pop/blockers/frost.webp" width="180" height="180" alt="" loading="lazy"><h3>Frost</h3><p>A frozen bottle won't budge. Match it or blast it to crack the ice.</p></li>
+        <li class="tile reveal"><img src="/assets/img/holler-pop/blockers/keg.webp" width="180" height="180" alt="" loading="lazy"><h3>Kegs</h3><p>Clear the way under a keg and roll it down to the cellar.</p></li>
+        <li class="tile reveal"><img src="/assets/img/holler-pop/blockers/mud.webp" width="180" height="180" alt="" loading="lazy"><h3>Mud</h3><p>Mud spreads every turn you don't clear some. Match next to it to wash it off.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Boosters -->
+  <section class="boost-sec" id="boosters" aria-labelledby="boost-title">
+    <div class="wrap">
+      <div class="center">
+        <span class="hp-kicker">When you're stuck</span>
+        <h2 id="boost-title" class="hp-title">Boosters</h2>
+        <p class="hp-lede">Every booster is free to use once you have it, and none of them cost a move.</p>
+      </div>
+      <ul class="boosts">
+        <li class="reveal"><img src="/assets/img/holler-pop/boosters/mallet.webp" width="160" height="160" alt="" loading="lazy"><h3>Mallet</h3><p>Smash any one bottle or blocker.</p></li>
+        <li class="reveal"><img src="/assets/img/holler-pop/boosters/swap-hands.webp" width="160" height="160" alt="" loading="lazy"><h3>Swap Hands</h3><p>Swap any two bottles, no match needed.</p></li>
+        <li class="reveal"><img src="/assets/img/holler-pop/boosters/shuffle.webp" width="160" height="160" alt="" loading="lazy"><h3>Shuffle</h3><p>A fresh deal for the whole board.</p></li>
+        <li class="reveal"><img src="/assets/img/holler-pop/boosters/barrel-roll.webp" width="160" height="160" alt="" loading="lazy"><h3>Barrel Roll</h3><p>Roll a barrel down any row and clear it.</p></li>
+        <li class="reveal"><img src="/assets/img/holler-pop/boosters/lantern.webp" width="160" height="160" alt="" loading="lazy"><h3>Lantern</h3><p>Lights up a good move when you can't see one.</p></li>
+      </ul>
+      <p class="boost-note"><img src="/assets/img/holler-pop/star.webp" width="120" height="120" alt="">Win a level for the first time and Pete hands you a booster.</p>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="shots-sec" id="screens" aria-labelledby="screens-title" data-carousel>
+    <div class="wrap">
+      <div class="shots-head">
+        <div>
+          <span class="hp-kicker">Straight from the game</span>
+          <h2 id="screens-title" class="hp-title">Take a look</h2>
+          <p class="hp-lede">Real screens from the game, not mock-ups.</p>
+        </div>
+        <div class="shots-nav">
+          <button type="button" data-prev aria-label="Previous screenshots"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+          <button type="button" data-next aria-label="More screenshots"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <ul class="shots-track" tabindex="0" aria-label="Holler Pop screenshots">
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/title.jpg" width="720" height="1280" loading="lazy" alt="The title screen: the Holler Pop logo over a row of bottles, a PLAY button and Pete saying howdy"></div><figcaption>Howdy, partner</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/pete.jpg" width="720" height="1280" loading="lazy" alt="Level 1, with Pete introducing himself in a speech bubble"></div><figcaption>Pete shows you around</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/map.jpg" width="720" height="1280" loading="lazy" alt="The map: a winding road of level stops past a cabin in Copperhead Hollow"></div><figcaption>100 levels, ten chapters</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/board-21.jpg" width="720" height="1280" loading="lazy" alt="Level 21, with mud blockers in the bottom corner"></div><figcaption>Stop the mud</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/board-77.jpg" width="720" height="1280" loading="lazy" alt="Level 77, full of frost and cobwebs"></div><figcaption>Thaw the frost</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/board-70.jpg" width="720" height="1280" loading="lazy" alt="Level 70, with crates, cobwebs and a keg"></div><figcaption>Bust the crates</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/board-100.jpg" width="720" height="1280" loading="lazy" alt="Level 100, the finale: a big board of cobwebs, crates and kegs"></div><figcaption>The finale</figcaption></figure></li>
+        <li><figure><div class="phone"><img src="/assets/img/holler-pop/shots/win.jpg" width="720" height="1280" loading="lazy" alt="The win card: Mighty Fine! Level 100 complete with two stars, coins and a mallet"></div><figcaption>Win stars and boosters</figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Fair play -->
+  <section id="fair" aria-labelledby="fair-title">
+    <div class="wrap">
+      <div class="center">
+        <span class="hp-kicker">Play your way</span>
+        <h2 id="fair-title" class="hp-title on-paper">No funny business</h2>
+        <p class="hp-lede">Holler Pop is free, and it plays fair.</p>
+      </div>
+      <ul class="fair">
+        <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><b>No timers</b><span>Take as long as you like on every move.</span></div></li>
+        <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><b>No ads in the middle of a level</b><span>Ads never pop up on their own. A video only plays when you tap a button asking for one.</span></div></li>
+        <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><b>Videos when you want them</b><span>Watch a short video for coins, a life, five more moves or a booster, as many times as you like.</span></div></li>
+        <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><b>Plays offline</b><span>No signal needed to play. You only need a connection to buy something or watch a video.</span></div></li>
+        <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><b>No loot boxes</b><span>Everything in the store says exactly what you get.</span></div></li>
+        <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><b>No account</b><span>Nothing to sign up for. Your progress saves on your phone.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="center">
+        <span class="hp-kicker">Questions</span>
+        <h2 id="faq-title" class="hp-title on-paper">Folks ask</h2>
+      </div>
+      <div class="faq-cols">
+        <div>
+          <details class="qa"><summary>When does it come out?</summary><div class="a"><p>Soon. The game is finished and going through Google Play's testing now. <a href="mailto:support@capybaracartel.com?subject=Tell%20me%20when%20Holler%20Pop%20is%20out">Email us</a> and we'll tell you the day it's out.</p></div></details>
+          <details class="qa"><summary>How much does it cost?</summary><div class="a"><p>It's free to download and free to play all the way through. There are optional in-app purchases (coin packs and a few one-time extras) and optional reward videos.</p></div></details>
+          <details class="qa"><summary>Which phones can play it?</summary><div class="a"><p>Android phones, through Google Play. There's no iPhone version yet.</p></div></details>
+          <details class="qa"><summary>Do I need the internet?</summary><div class="a"><p>No. Holler Pop plays offline. You only need a connection to buy something or to watch an optional video.</p></div></details>
+        </div>
+        <div>
+          <details class="qa"><summary>Who is it for?</summary><div class="a"><p>Players 13 and up. It's a cartoon game, but the bottles are whiskey flavors and Pete runs a still.</p></div></details>
+          <details class="qa"><summary>Is there real alcohol or real brands in it?</summary><div class="a"><p>No. Every bottle, barrel and still in the game is made up, and no real whiskey brand or distillery appears in it. The game doesn't sell or promote alcohol.</p></div></details>
+          <details class="qa"><summary>Where is my progress saved?</summary><div class="a"><p>On your phone. There's no account, so uninstalling the game or clearing its storage deletes your progress. One-time purchases come back with RESTORE PURCHASES in the store.</p></div></details>
+          <details class="qa"><summary>Something's broken. Who do I tell?</summary><div class="a"><p>The <a href="/support/">support page</a> has answers to the usual problems, or email <a href="mailto:support@capybaracartel.com?subject=Holler%20Pop%20help">support@capybaracartel.com</a>.</p></div></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing call -->
+  <section class="close-sec" aria-labelledby="close-title">
+    <div class="wrap center">
+      <img class="icon-big" src="/assets/img/holler-pop/icon-256.png" width="256" height="256" alt="The Holler Pop app icon: a cinnamon whiskey bottle on a blue sunburst">
+      <h2 id="close-title" class="hp-title">Coming soon to Google Play</h2>
+      <p class="hp-lede">Want to know the day it lands? Send us an email and we'll write back when it's out. Nothing else, no mailing list.</p>
+      <div class="hero-cta">
+        <a class="gbtn" href="mailto:support@capybaracartel.com?subject=Tell%20me%20when%20Holler%20Pop%20is%20out&amp;body=Howdy!%20Send%20me%20a%20note%20when%20Holler%20Pop%20is%20on%20Google%20Play.">Tell me when it's out</a>
+        <a class="gbtn blue" href="/support/">Get help</a>
+      </div>
+      <p class="legal-links"><a href="/holler-pop/privacy.html">Privacy policy</a><a href="/holler-pop/terms.html">Terms of service</a><a href="/support/">Support</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="/assets/img/lockup-cream.png" width="880" height="858" alt="Capybara Cartel">
+        <p>An independent game studio in Tennessee.</p>
+        <a class="foot-mail" href="mailto:support@capybaracartel.com">support@capybaracartel.com</a>
+      </div>
+      <div>
+        <h2>Games</h2>
+        <ul>
+          <li><a href="/holler-pop/">Holler Pop</a></li>
+          <li><a href="/#whiskeyville">Whiskeyville</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/support/">Support</a></li>
+          <li><a href="mailto:support@capybaracartel.com">Email us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Holler Pop legal</h2>
+        <ul>
+          <li><a href="/holler-pop/privacy.html">Privacy policy</a></li>
+          <li><a href="/holler-pop/terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> Capybara Cartel · Tennessee, USA</span>
+      <span>Holler Pop is a work of fiction. No real whiskey brand or distillery is in it.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

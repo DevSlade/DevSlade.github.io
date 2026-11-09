@@ -1,65 +1,58 @@
-# Capybara Cartel — studio website
+# Capybara Cartel: studio website
 
-Plain HTML and CSS: no build step, no framework, nothing to install. It runs on any static host.
-GitHub Pages is free, and it's what Holler Pop's release plan uses.
+Plain HTML, CSS and a little JavaScript. No build step, no framework, nothing to install.
+It's served by GitHub Pages at **https://capybaracartel.com** (the `CNAME` file sets the domain).
 
 | Path | What it is |
 |---|---|
-| `index.html` | Home page: hero, games (Holler Pop and Whiskeyville), about, contact |
-| `holler-pop/privacy.html` | Holler Pop privacy policy. **This is the URL for Play Console** |
+| `index.html` | Home: hero, games (Holler Pop and Whiskeyville), house rules, about, contact |
+| `holler-pop/index.html` | The Holler Pop page, in the game's own look (`assets/css/holler-pop.css`) |
+| `holler-pop/privacy.html` | Holler Pop privacy policy. **This URL is in Play Console. Don't move it.** |
+| `holler-pop/terms.html` | Holler Pop terms of service |
+| `support/index.html` | Support: email, bug-report checklist, FAQ |
+| `about/index.html` | About the studio |
+| `404.html` | "Lost in the holler" page (GitHub Pages serves it for missing pages) |
 | `app-ads.txt` | AdMob verification. It has to sit at the site root |
-| `brand/` | Press kit page plus every logo variant (see below) |
-| `assets/` | CSS and the small images the site uses |
-| `tools/make_logos.py` | Rebuilds every logo variant from `brand/source/` |
-| `404.html` | "Lost in the holler" page |
+| `robots.txt`, `sitemap.xml` | For search engines |
+| `assets/css/site.css` | Studio styles, shared by every page |
+| `assets/js/site.js` | Menu, copy button, screenshot carousel, scroll reveals, bottle parallax |
+| `assets/fonts/` | Lilita One and Fredoka (the game's fonts, SIL OFL; licences alongside) |
+| `assets/img/holler-pop/` | Game art, icons and screenshots, exported from the game project |
 
-## Before it goes live: fill these in
+The logo files and the old press-kit page now live outside this repo, in
+`MY PROGRAMS & Repositories/Capybara Cartel brand kit/`.
 
-1. **`SUPPORT_EMAIL`**: in `index.html` (contact button) and `holler-pop/privacy.html` (contact section).
-   Use a studio address, not a personal one: it will be public.
-2. **`app-ads.txt`**: once the AdMob account exists, paste your real line and remove the `# `.
-3. **Site address**: `index.html` assumes `https://devslade.github.io/` in its sharing tags (`og:url`,
-   `og:image`). Change both if you use another address or a domain.
+## Try it locally
 
-## Put it online (GitHub Pages, about 10 minutes)
+```
+python -m http.server 8810 --bind 127.0.0.1
+```
 
-1. On GitHub, create a **public** repo named exactly `DevSlade.github.io`.
-2. Push this folder to it:
-   ```
-   git init -b main
-   git add -A
-   git commit -m "Capybara Cartel site"
-   git remote add origin https://github.com/DevSlade/DevSlade.github.io.git
-   git push -u origin main
-   ```
-3. On the repo, go to Settings → Pages → Deploy from branch → `main` / root.
-4. After a minute:
-   - Site: `https://devslade.github.io/`
-   - Privacy policy for Play Console: `https://devslade.github.io/holler-pop/privacy.html`
-   - AdMob reads: `https://devslade.github.io/app-ads.txt`
-5. In Play Console, set **Website** to `https://devslade.github.io`, with no path, or AdMob won't find `app-ads.txt`.
+Then open http://127.0.0.1:8810. Links are root-relative (`/support/`), so open it through a server,
+not by double-clicking the file.
 
-## Logo variants (`brand/`)
+## When Holler Pop goes live on Google Play
 
-Every piece comes in six treatments: `-rust` (original), `-cream` (light badge), `-cream-transparent`,
-`-ink-transparent`, `-black-transparent`, `-white-transparent`.
+Swap "coming soon" for the real thing. Use Google's official "Get it on Google Play" badge,
+linking to the store page:
 
-- `lockup/`: capybara and name together (the full logo), plus a square version on rust
-- `mark/`: the capybara alone, plus a square version on rust
-- `wordmark/`: the name plate alone
-- `social/`: 800×800 avatar (circle-safe), 1500×500 banner, 1200×630 link-preview card
-- `icons/`: 512/192/180/48/32/16 PNGs, a maskable 512 for Android, and `favicon.ico`
+- `index.html`: the status pill in the game card, the "Tell me when it's out" button, the marquee band
+- `holler-pop/index.html`: the `.soon` chip and the "Tell me when it's out" buttons in the hero and
+  the closing section, the closing heading, and the "When does it come out?" FAQ
+- `about/index.html`: the facts box and the first item under "What's coming"
+- `assets/img/holler-pop/shots/`: re-export if the game's look changes
 
-To rebuild after changing the source image: `python tools/make_logos.py` (needs Pillow and numpy).
+## Legal pages
 
-**Limits of the current files:** they come from a 1024×1024 image, so the full logo is about 870 px wide.
-That's fine for screens. Merch and large print need a vector redraw (SVG) or a higher-resolution source.
-The favicon at 16 px is mostly a silhouette; a simplified mark would read better that small.
+- Change the "Effective" date at the top whenever you edit the privacy policy or terms.
+- If the game starts collecting anything new (analytics, accounts, cloud saves, another ad network),
+  the privacy policy and Play Console's Data safety form both have to change first.
+- `app-ads.txt`: once the AdMob account exists, paste your real line and remove the `# `.
 
 ## Notes
 
-- Fonts (Rye, Bitter, Source Serif 4) load from Google Fonts. To keep visitors' IPs away from Google,
-  download the three families (all SIL OFL), put them in `assets/fonts/` and swap the `<link>` for
-  `@font-face` rules. The privacy page already uses system fonts only.
-- The site copy says Holler Pop is "Coming soon · Google Play". When it's live, swap that pill for the
-  official Google Play badge linking to the store page.
+- The studio fonts (Rye, Bitter, Source Serif 4) load from Google Fonts, and the privacy policy says so.
+  To keep visitors' IPs away from Google, download the three families (all SIL OFL) into `assets/fonts/`
+  and swap the `<link>` for `@font-face` rules, then update section 9 of the privacy policy.
+- In Play Console, set **Website** to `https://capybaracartel.com`, with no path, or AdMob won't find
+  `app-ads.txt`.
